@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './styles.css';
 import Board from './board/Board';
 
@@ -21,7 +21,7 @@ export default function App() {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <button className='go-to-move' onClick={() => jumpTo(move)}>{description}</button>
       </li>
     )
   })
